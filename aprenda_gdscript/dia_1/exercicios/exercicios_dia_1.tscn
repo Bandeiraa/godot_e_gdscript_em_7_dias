@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://tsgq4okm6aat"]
+
+[ext_resource type="Script" path="res://aprenda_gdscript/dia_1/exercicios/exercicios_dia_1.gd" id="1_xedky"]
+
+[node name="exercicios_dia_1" type="Node"]
+script = ExtResource("1_xedky")
