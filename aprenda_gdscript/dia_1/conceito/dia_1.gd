@@ -6,7 +6,7 @@ extends Node
 #Em seguida, pressione F6 para rodar a cena que foi aberta.
 func _ready() -> void:
 	
-	#Mensagem que irá aparecer no contole (output), encontrado no canto inferior
+	#Mensagem que irá aparecer no console (output), encontrado no canto inferior
 	#esquerdo
 	
 	print("Olá, mundo!")
