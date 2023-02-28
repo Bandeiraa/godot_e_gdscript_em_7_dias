@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://m5qegt0mpbw1"]
+
+[ext_resource type="Script" path="res://aprenda_gdscript/dia_3/conceito/dia_3.gd" id="1_ewigh"]
+
+[node name="dia_3" type="Node"]
+script = ExtResource("1_ewigh")
