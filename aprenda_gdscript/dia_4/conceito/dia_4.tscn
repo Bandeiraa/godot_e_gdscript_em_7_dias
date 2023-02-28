@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://08li6vly5jf5"]
+
+[ext_resource type="Script" path="res://aprenda_gdscript/dia_4/conceito/dia_4.gd" id="1_trfha"]
+
+[node name="dia_4" type="Node"]
+script = ExtResource("1_trfha")

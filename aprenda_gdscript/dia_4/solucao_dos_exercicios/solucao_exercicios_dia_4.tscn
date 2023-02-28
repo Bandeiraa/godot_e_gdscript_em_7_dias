@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://vod3xl68g02l"]
+
+[ext_resource type="Script" path="res://aprenda_gdscript/dia_4/solucao_dos_exercicios/solucao_exercicios_dia_4.gd" id="1_5uon2"]
+
+[node name="solucao_exercicios_dia_4" type="Node"]
+script = ExtResource("1_5uon2")
