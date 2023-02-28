@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=2 format=3 uid="uid://bokk51l18ia3t"]
 
 [ext_resource type="Script" path="res://aprenda_gdscript/dia_1/solucao_dos_exercicios/solucao_exercicios_dia_1.gd" id="1_hkr40"]
 

@@ -25,4 +25,3 @@ func _ready() -> void:
 	print("\n")
 	
 	### RESPOSTA QUESTÃO 3 ###
-	return
