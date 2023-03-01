@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Texture2D" uid="uid://bu8qa6k44xcci" path="res://tiny_sword_demo/assets/terrain/decoration/tree.png" id="1_1ombo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xa5bn"]
+atlas = ExtResource("1_1ombo")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26a0r"]
+atlas = ExtResource("1_1ombo")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wsnk"]
+atlas = ExtResource("1_1ombo")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ddwp"]
+atlas = ExtResource("1_1ombo")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_suqwc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xa5bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26a0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wsnk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ddwp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jhqep"]
+
+[node name="Tree" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_suqwc")
+autoplay = "default"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 69)
+shape = SubResource("CircleShape2D_jhqep")

@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Texture2D" uid="uid://0jowt3awur78" path="res://tiny_sword_demo/assets/terrain/decoration/water_rock.png" id="1_7k1ih"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rp8q4"]
+atlas = ExtResource("1_7k1ih")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqmlv"]
+atlas = ExtResource("1_7k1ih")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkxrc"]
+atlas = ExtResource("1_7k1ih")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2po6"]
+atlas = ExtResource("1_7k1ih")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn2j4"]
+atlas = ExtResource("1_7k1ih")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgreq"]
+atlas = ExtResource("1_7k1ih")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_niokd"]
+atlas = ExtResource("1_7k1ih")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkerm"]
+atlas = ExtResource("1_7k1ih")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3k3vy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rp8q4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqmlv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkxrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2po6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jn2j4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgreq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_niokd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkerm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="WaterRocks" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_3k3vy")
+animation = &"idle"
+autoplay = "idle"

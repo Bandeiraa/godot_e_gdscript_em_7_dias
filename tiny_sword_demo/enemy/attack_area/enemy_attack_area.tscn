@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1oiealoubrwt"]
+
+[ext_resource type="Script" path="res://tiny_sword_demo/enemy/attack_area/enemy_attack_area.gd" id="1_owdco"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_irkff"]
+radius = 80.0
+
+[node name="EnemyAttackArea" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_owdco")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_irkff")
+
+[node name="Lifetime" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="on_body_entered"]
+[connection signal="timeout" from="Lifetime" to="." method="on_lifetime_timeout"]

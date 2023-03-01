@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="FontFile" uid="uid://b5b3uxi0dqgu6" path="res://tiny_sword_demo/assets/env/kurland.ttf" id="1_ja23i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g403r"]
+font = ExtResource("1_ja23i")
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 0.6)
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
+
+[node name="Interface" type="CanvasLayer"]
+
+[node name="Health" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 110.0
+offset_bottom = 57.0
+text = "Hp: 10"
+label_settings = SubResource("LabelSettings_g403r")
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 69.0
+offset_right = 176.0
+offset_bottom = 106.0
+text = "Score: 0000"
+label_settings = SubResource("LabelSettings_g403r")
+vertical_alignment = 1
